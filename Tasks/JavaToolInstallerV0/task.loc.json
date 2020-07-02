@@ -13,7 +13,7 @@
   "author": "Microsoft Corporation",
   "version": {
     "Major": 0,
-    "Minor": 171,
+    "Minor": 172,
     "Patch": 0
   },
   "satisfies": [
@@ -166,6 +166,8 @@
     "CreateDestDir": "ms-resource:loc.messages.CreateDestDir",
     "RetrievingJdkFromAzure": "ms-resource:loc.messages.RetrievingJdkFromAzure",
     "RetrievingJdkFromLocalPath": "ms-resource:loc.messages.RetrievingJdkFromLocalPath",
+    "ArchiveWasExtractedEarlier": "ms-resource:loc.messages.ArchiveWasExtractedEarlier",
+    "ExtractingArchiveToPath": "ms-resource:loc.messages.ExtractingArchiveToPath",
     "SucceedMsg": "ms-resource:loc.messages.SucceedMsg",
     "SetJavaHome": "ms-resource:loc.messages.SetJavaHome",
     "SetExtendedJavaHome": "ms-resource:loc.messages.SetExtendedJavaHome",

@@ -40,20 +40,20 @@ export function sudo(toolName: string): ToolRunner {
  * Only for macOS.
  * @param sourceFile Path to a disk image file.
  */
-export async function attach(sourceFile: string): Promise<void> {
+export async function attach(sourceFile: string): Promise<number> {
     console.log(tl.loc('AttachDiskImage'));
     const hdiutil = sudo('hdiutil');
     hdiutil.line(`attach "${sourceFile}"`);
-    await hdiutil.exec();
+    return await hdiutil.exec();
 }
 
 /**
  * Detach a disk image.
  * @param volumePath Path to the attached disk image.
  */
-export async function detach(volumePath: string): Promise<void> {
+export async function detach(volumePath: string): Promise<number> {
     console.log(tl.loc('DetachDiskImage'));
     const hdiutil = sudo('hdiutil');
     hdiutil.line(`detach "${volumePath}"`);
-    await hdiutil.exec();
+    return await hdiutil.exec();
 }
